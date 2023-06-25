@@ -22,6 +22,7 @@ const ulGalleryListEl = document.querySelector('ul.gallery');
 ulGalleryListEl.insertAdjacentHTML('beforeend', galerryMarkup);
 ulGalleryListEl.addEventListener('click', onOpenModalJpg);
 function onOpenModalJpg(evnt) {
+	evnt.preventDefault();
 	if (evnt.target.classList.contains('gallery__image')) {
 		const instance = basicLightbox.create(`
 				<img

@@ -16,4 +16,3 @@ let modal = new SimpleLightbox('.gallery a', {
 	captionsData: 'alt',
 	captionDelay: '250ms',
 });
-modal.open();
